@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="/Users/marjilarahmaty/Desktop/CB_file/Project_5/sample.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="0"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="1390"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="4,7:mainorder_d"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="c_location" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="61"/><column index="2" value="73"/><column index="3" value="41"/><column index="4" value="62"/><column index="5" value="104"/><column index="6" value="47"/><column index="7" value="85"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="customer" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="113"/><column index="2" value="67"/><column index="3" value="64"/><column index="4" value="74"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="order_d" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="99"/><column index="2" value="124"/><column index="3" value="85"/><column index="4" value="76"/><column index="5" value="77"/><column index="6" value="47"/><column index="7" value="53"/><column index="8" value="47"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="order_t" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="85"/><column index="2" value="101"/><column index="3" value="113"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="SQL 1">---product = dfs[['Product_ID', 'Product_Name', 'Category', 'Sub-Category']]
+
+	create table product(
+		Product_ID text, 
+		Product_Name text, 
+		Category text, 
+		'Sub-Category' text, 
+		primary key(Product_ID,Product_Name)
+	);
+
+----shipment = dfs[['ship_id', 'Ship_Date', 'Ship_Mode', 'Order_ID']]
+
+
+	create table shipment(
+		ship_id int, 
+		Ship_Date date, 
+		Ship_Mode text, 
+		Order_ID text, 
+		primary key (ship_id),
+		FOREIGN key(Order_ID) REFERENCES order_t(Order_ID)
+	);
+
+-------order = dfs[['Order_ID', 'Order_Date', 'Customer_ID']]
+
+	create table order_t(
+		Order_ID text, 
+		Order_Date date, 
+		Customer_ID text, 
+		PRIMARY key(Order_ID),
+		FOREIGN key (Customer_ID) REFERENCEs customer(Customer_ID)
+	); 
+
+-------customer = dfs[['Customer_ID', 'First_N', 'Last_N', 'Segment']]
+	create table customer(
+	Customer_ID text, 
+	First_N text, 
+	Last_N text, 
+	Segment text, 
+	PRIMARy key (Customer_ID)
+	
+	); 
+
+---order_d = dfs[['Product_ID', 'Product_Name', 'Order_ID', 'Discount', 'Quantity', 'price', 'Profit', 'Sales']]
+	create table order_d(
+	Product_ID text, 
+	Product_Name text, 
+	Order_ID text, 
+	Discount real, 
+	Quantity int, 
+	price real, 
+	Profit real, 
+	Sales real, 
+	FOREIGN key(Product_ID,Product_Name) REFERENCES product(Product_ID,Product_Name),
+	FOREIGN key(Order_ID) REFERENCES order_t(Order_ID)
+	
+	);
+
+-----c_location = dfs[['add_id', 'Country', 'City','Region', 'Postal_Code', 'State', 'Order_ID']]
+
+	create table c_location(
+		add_id int, 
+		Country text, 
+		City text, 
+		Region text, 
+		Postal_Code text , 
+		State text, 
+		Order_ID text, 
+		PRIMARY key(add_id),
+		FOREIGN key(Order_ID) REFERENCES order_t(Order_ID)
+		
+		
+	);</sql><current_tab id="0"/></tab_sql></sqlb_project>
