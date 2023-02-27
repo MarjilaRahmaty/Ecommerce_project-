@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="/Users/marjilarahmaty/Desktop/CB_file/Project_5/sample.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="0"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="1390"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="4,7:mainorder_d"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="c_location" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="61"/><column index="2" value="73"/><column index="3" value="41"/><column index="4" value="62"/><column index="5" value="104"/><column index="6" value="47"/><column index="7" value="85"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="customer" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="113"/><column index="2" value="67"/><column index="3" value="64"/><column index="4" value="74"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="order_d" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="99"/><column index="2" value="124"/><column index="3" value="85"/><column index="4" value="76"/><column index="5" value="77"/><column index="6" value="47"/><column index="7" value="53"/><column index="8" value="47"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="order_t" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="85"/><column index="2" value="101"/><column index="3" value="113"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="SQL 1">---product = dfs[['Product_ID', 'Product_Name', 'Category', 'Sub-Category']]
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="/Users/marjilarahmaty/Desktop/CB_file/Project_5/sample.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="1390"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="4,7:mainorder_t"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="c_location" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="61"/><column index="2" value="108"/><column index="3" value="143"/><column index="4" value="64"/><column index="5" value="104"/><column index="6" value="129"/><column index="7" value="138"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="customer" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="113"/><column index="2" value="99"/><column index="3" value="116"/><column index="4" value="106"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="order_d" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="99"/><column index="2" value="124"/><column index="3" value="85"/><column index="4" value="76"/><column index="5" value="77"/><column index="6" value="47"/><column index="7" value="53"/><column index="8" value="47"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="order_t" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="138"/><column index="2" value="101"/><column index="3" value="113"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="product" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="158"/><column index="2" value="300"/><column index="3" value="124"/><column index="4" value="115"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="sale" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="158"/><column index="2" value="300"/><column index="3" value="138"/><column index="4" value="76"/><column index="5" value="77"/><column index="6" value="79"/><column index="7" value="94"/><column index="8" value="88"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="shipment" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="64"/><column index="2" value="93"/><column index="3" value="119"/><column index="4" value="138"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="SQL 1">---product = dfs[['Product_ID', 'Product_Name', 'Category', 'Sub-Category']]
 
 	create table product(
 		Product_ID text, 
@@ -30,6 +30,8 @@
 		FOREIGN key (Customer_ID) REFERENCEs customer(Customer_ID)
 	); 
 
+	
+	
 -------customer = dfs[['Customer_ID', 'First_N', 'Last_N', 'Segment']]
 	create table customer(
 	Customer_ID text, 
@@ -55,6 +57,7 @@
 	
 	);
 
+	drop table sale;
 -----c_location = dfs[['add_id', 'Country', 'City','Region', 'Postal_Code', 'State', 'Order_ID']]
 
 	create table c_location(
@@ -69,4 +72,95 @@
 		FOREIGN key(Order_ID) REFERENCES order_t(Order_ID)
 		
 		
-	);</sql><current_tab id="0"/></tab_sql></sqlb_project>
+	);
+	
+--------------- question --------------
+-------1)What is the category generating the maximum sales revenue?
+------What about the profit in this category?
+---Are they making a loss in any categroies?	
+
+	select  max(order_d.sales) as max_sale ,product.Product_Name, product.Category,order_d.Profit
+	from product join order_d
+	on product.Product_ID = order_d.Product_ID and 
+		product.Product_Name = order_d.Product_Name
+			group by(product.Category);
+	
+/*
+	select max(order_d.sales) as max_sale , product.Product_ID, product.Product_Name, product.Category,order_d.Profit
+	from product join order_d
+	on product.Product_ID = order_d.Product_ID and 
+		product.Product_Name = order_d.Product_Name
+			group by(product.Category);
+
+			
+	select min(order_d.profit) as min_profit , product.Product_ID, product.Product_Name, product.Category
+	from product join order_d
+	on product.Product_ID = order_d.Product_ID and 
+		product.Product_Name = order_d.Product_Name
+			group by(product.Category); */
+	
+---2)What are 5 states generating the maximum and minimum sales revenue?
+	select order_d.sales as max_sales , c_location.State
+	from order_d join c_location
+	on order_d.Order_ID = c_location.Order_ID
+	group by c_location.state
+	order by max_sales DESC
+	limit 5; 
+	
+	select order_d.sales as max_sales , c_location.State
+	from order_d join c_location
+	on order_d.Order_ID = c_location.Order_ID
+	group by c_location.state
+	order by max_sales asc
+	limit 5; 
+	----------
+	/*select  min(order_d.sales) as min_sales , c_location.State
+	from order_d join c_location
+	on order_d.Order_ID = c_location.Order_ID
+	group by c_location.state
+	limit 5; */
+	--------- window function 
+	
+	
+---3)What are the 3 products in each product segment with the highest sales?
+---Are they the 3 most profitable products as well?
+
+	select * from (
+	select DISTINCT product.Product_Name,order_d. sales,  product.Category,
+	dense_rank()  over(PARTITION by product.Category order by order_d.sales DESC) as rank_n
+	from order_d  join 
+	product
+	on order_d.Product_ID = product.Product_ID
+	and order_d.Product_Name = product.Product_Name)as x 
+	where x.rank_n &lt;=3; 
+	
+---4)What are the 3 best-seller products in each product segment? (Quantity-wise)
+	select * from (
+	select  DISTINCT customer.First_N,customer.Segment,product.Category, order_d.Quantity,product.Product_Name,
+	 row_number()over(PARTITION by product.Category order by order_d.Quantity DESC) as rnk_n
+	from Customer join order_t
+	on customer.Customer_ID = order_t.Customer_ID
+	join order_d
+	on order_t.Order_ID = order_d.Order_ID
+	join product
+	on order_d.Product_ID = product.Product_ID and 
+	order_d.Product_Name = product.Product_Name) as c
+	where c.rnk_n &lt;=3; 
+----5)What are the top 3 worst-selling products in every category? (Quantity-wise)
+	select * from (
+	select DISTINCT product.Product_Name, product.Category, order_d.Quantity, 
+	row_number()over(PARTITION by product.Category order by order_d.Quantity asc) as rnk
+	from product
+	join order_d
+	on product.Product_ID = order_d.Product_ID 
+	and product.Product_Name = order_d.Product_Name) as n 
+	where n.rnk &lt;=3; 
+---6)How many unique customers per month are there for the year 2016. (There's a catch here: contrary to other 'heavier' RDBMS, 
+---SQLite does not support the functions YEAR() or MONTH() to extract the year or the month in a date. 
+---You will have to create two new columns: year and month.)
+
+
+
+
+	
+	</sql><current_tab id="0"/></tab_sql></sqlb_project>
