@@ -159,8 +159,7 @@
 ---SQLite does not support the functions YEAR() or MONTH() to extract the year or the month in a date. 
 ---You will have to create two new columns: year and month.)
 
-
-
+select * from order_t;
 
 	
 	</sql><current_tab id="0"/></tab_sql></sqlb_project>
